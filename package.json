@@ -12,22 +12,7 @@
     "lucide-react": "^1.14.0",
     "next": "16.2.4",
     "react": "19.2.4",
-    "react-dom": "19.2.4",
-    "@ai-whisperers/product": "^0.1.0",
-    "@ai-whisperers/checkout": "^0.1.0",
-    "@ai-whisperers/catalog": "^0.1.0",
-    "@ai-whisperers/ui-extras": "^0.1.0",
-    "@ai-whisperers/payments": "^0.1.0",
-    "@ai-whisperers/api-helpers": "^0.1.0",
-    "@ai-whisperers/admin": "^0.1.0",
-    "@ai-whisperers/auth": "^0.1.0",
-    "@ai-whisperers/client-kit": "^0.1.0",
-    "@ai-whisperers/commerce": "^0.1.0",
-    "@ai-whisperers/i18n": "^0.1.0",
-    "@ai-whisperers/seo": "^0.1.0",
-    "@ai-whisperers/theme": "^0.1.0",
-    "@ai-whisperers/ui": "^0.1.0",
-    "@ai-whisperers/whatsapp": "^0.1.0"
+    "react-dom": "19.2.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -37,23 +22,6 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.4",
     "tailwindcss": "^4",
-    "typescript": "^5",
-    "@ai-whisperers/test-vitest": "^0.1.0",
-    "vitest": "^3.0.0",
-    "@ai-whisperers/product": "^0.1.0",
-    "@ai-whisperers/checkout": "^0.1.0",
-    "@ai-whisperers/catalog": "^0.1.0",
-    "@ai-whisperers/ui-extras": "^0.1.0",
-    "@ai-whisperers/payments": "^0.1.0",
-    "@ai-whisperers/api-helpers": "^0.1.0",
-    "@ai-whisperers/admin": "^0.1.0",
-    "@ai-whisperers/auth": "^0.1.0",
-    "@ai-whisperers/client-kit": "^0.1.0",
-    "@ai-whisperers/commerce": "^0.1.0",
-    "@ai-whisperers/i18n": "^0.1.0",
-    "@ai-whisperers/seo": "^0.1.0",
-    "@ai-whisperers/theme": "^0.1.0",
-    "@ai-whisperers/ui": "^0.1.0",
-    "@ai-whisperers/whatsapp": "^0.1.0"
+    "typescript": "^5"
   }
 }

@@ -21,7 +21,6 @@
     "compras": "Martes y Jueves en Abasto + mercado",
     "entregas": "Sábado 09:00 - 14:00"
   },
-  "publicUrl": "https://paragu-ai.com/s/es/de-abasto-a-casa",
-  "path": "/s/es/de-abasto-a-casa",
+  "publicUrl": "https://deabastoacasa.paragu-ai.com",
   "isLiveProduction": false
 }

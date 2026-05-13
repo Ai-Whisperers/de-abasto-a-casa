@@ -15,7 +15,7 @@ const fraunces = Fraunces({
   variable: '--font-heading',
 })
 
-const BASE = process.env.NEXT_PUBLIC_BASE_URL || 'https://paragu-ai.com/s/es/de-abasto-a-casa'
+const BASE = process.env.NEXT_PUBLIC_BASE_URL || 'https://deabastoacasa.paragu-ai.com'
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE),
