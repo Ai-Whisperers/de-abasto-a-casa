@@ -10,6 +10,8 @@ services:
       - NODE_ENV=production
       - NEXT_PUBLIC_BASE_URL=https://deabastoacasa.paragu-ai.com
     restart: unless-stopped
+    networks:
+      - agent-net
     deploy:
       mode: replicated
       replicas: 1
@@ -17,5 +19,9 @@ services:
         - "traefik.enable=true"
         - "traefik.http.routers.deabasto.rule=Host(`deabastoacasa.paragu-ai.com`)"
         - "traefik.http.routers.deabasto.entrypoints=websecure"
-        - "traefik.http.routers.deabasto.tls.certresolver=letsencrypt"
+        - "traefik.http.routers.deabasto.tls.certresolver=letsencryptresolver"
         - "traefik.http.services.deabasto.loadbalancer.server.port=3000"
+
+networks:
+  agent-net:
+    external: true
