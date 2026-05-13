@@ -6,9 +6,11 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=production
+      - NEXT_PUBLIC_BASE_URL=https://paragu-ai.com/s/es/de-abasto-a-casa
     restart: unless-stopped
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.de-abasto-a-casa.rule=Host(`de-abasto-a-casa.paragu-ai.com`)"
+      - "traefik.http.routers.de-abasto-a-casa.rule=PathPrefix(`/s/es/de-abasto-a-casa`)"
       - "traefik.http.routers.de-abasto-a-casa.entrypoints=websecure"
       - "traefik.http.services.de-abasto-a-casa.loadbalancer.server.port=3000"
+      - "traefik.http.routers.de-abasto-a-casa.middlewares=strip-de-abasto"
