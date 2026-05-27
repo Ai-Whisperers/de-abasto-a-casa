@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter, Fraunces } from 'next/font/google'
 import './globals.css'
+import { CookieConsent } from "@ai-whisperers/seo"
+import { WhatsAppFloat } from "@ai-whisperers/whatsapp"
 
 const inter = Inter({
   subsets: ['latin'],
@@ -38,7 +40,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es" className={`${inter.variable} ${fraunces.variable} scroll-smooth`}>
-      <body className="min-h-screen bg-surface text-text font-sans">{children}</body>
+      <body className="min-h-screen bg-surface text-text font-sans">{children}
+        <WhatsAppFloat />
+        <CookieConsent />
+      </body>
     </html>
   )
 }
